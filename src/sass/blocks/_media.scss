@@ -1,3 +1,20 @@
+@media (max-width: 992px) {
+    // footer
+    .footer {
+        
+        &__info {
+            padding: 25px 54px 25px;
+            width: 400px;
+            height: 200px;
+        }
+
+        &__addr, &__phone {
+            font-size: 18px;
+            margin-bottom: 26px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .title {
         font-size: 26px;
@@ -46,6 +63,17 @@
             width: 100%;
         }
     }
+
+     // footer
+     .footer {
+        
+        &__info {
+            position: relative;
+            padding: 25px 54px 25px;
+            width: 100%;
+            height: 200px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -60,7 +88,6 @@
     }
 
     // promo ==============================
-
     .header {
         flex-direction: column;
         row-gap: 15px;
@@ -87,6 +114,26 @@
         }
     }
 
+    // catalog ====================
+    .catalog {
+        &__tab {
+            width: 170px;
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+
+    // reviews
+    .reviews {
+        &-item {
+            column-gap: 30px;
+            &__img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -95,6 +142,34 @@
         .title {
             br {
                 display: none;
+            }
+        }
+    }
+
+    // catalog ====================
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        &__tab {
+            width: 170px;
+            height: 40px;
+            font-size: 16px;
+        }
+        &__content {
+            margin-top: 40px;
+        }
+    }
+
+    // reviews
+    .reviews {
+        &-item {
+            flex-direction: column;
+            align-items: center;
+            &__img {
+                margin-bottom: 15px;
             }
         }
     }
@@ -121,6 +196,11 @@
         &_submit {
             height: 45px;
             font-size: 15px;
+        }
+        &_mini {
+            width: 110px;
+            height: 36px;
+            font-size: 14px;
         }
     }
 
@@ -195,5 +275,43 @@
             }
         }
     }
+
+    // catalog ====================
+    .catalog {
+        &-item {
+            min-height: 300px;
+            &__img {
+                height: 150px;
+            }
+            &__descr {
+                margin-top: 10px;
+            }
+            &__old-price {
+                font-size: 13px;
+            }
+            &__price {
+                font-size: 16px;
+            }
+            &__list {
+                li {
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+
+    // footer
+    .footer {
+        height: 300px;
+
+    &__addr, &__phone {
+        font-size: 16px;
+    }
+
+    &__social-item {
+        width: 40px;
+        height: 40px;
+    }
+}
     
 }
